@@ -24,9 +24,15 @@ public class PalindromCheckerTest {
     Assert.assertFalse(response);
   }
 
-//  @FIXME master needs to be FINE
-//  @Test()
-//  public void testValidOtherData() {
-//    boolean response = palindromChecker.check(null);
-//  }
+  @Test()
+  public void testValidOtherData() {
+    boolean response = palindromChecker.check(null);
+    Assert.assertFalse(response);
+  }
+
+  @Test()
+  public void testEmptyString() {
+    boolean response = palindromChecker.check("");
+    Assert.assertTrue(response);
+  }
 }
