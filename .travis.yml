@@ -1,4 +1,4 @@
 jdk: openjdk11
 language: java
 script:
-  - "gradle :cleanTest :test"
+  - "./gradlew :cleanTest :test"
