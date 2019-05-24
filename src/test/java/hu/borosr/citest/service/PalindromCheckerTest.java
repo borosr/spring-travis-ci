@@ -24,9 +24,8 @@ public class PalindromCheckerTest {
     Assert.assertFalse(response);
   }
 
-//  @FIXME master needs to be FINE
-//  @Test()
-//  public void testValidOtherData() {
-//    boolean response = palindromChecker.check(null);
-//  }
+  @Test()
+  public void testValidOtherData() {
+    boolean response = palindromChecker.check(null);
+  }
 }
