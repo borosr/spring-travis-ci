@@ -23,4 +23,9 @@ public class PalindromCheckerTest {
     boolean response = palindromChecker.check("randomstring");
     Assert.assertFalse(response);
   }
+
+  @Test()
+  public void testValidOtherData() {
+    boolean response = palindromChecker.check(null);
+  }
 }
