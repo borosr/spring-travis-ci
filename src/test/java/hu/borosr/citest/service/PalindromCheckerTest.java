@@ -29,4 +29,10 @@ public class PalindromCheckerTest {
     boolean response = palindromChecker.check(null);
     Assert.assertFalse(response);
   }
+
+  @Test()
+  public void testEmptyString() {
+    boolean response = palindromChecker.check("");
+    Assert.assertFalse(response);
+  }
 }
