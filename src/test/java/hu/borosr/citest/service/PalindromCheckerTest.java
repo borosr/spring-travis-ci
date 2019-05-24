@@ -33,6 +33,6 @@ public class PalindromCheckerTest {
   @Test()
   public void testEmptyString() {
     boolean response = palindromChecker.check("");
-    Assert.assertFalse(response);
+    Assert.assertTrue(response);
   }
 }
