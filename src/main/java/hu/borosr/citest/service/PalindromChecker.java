@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 public class PalindromChecker {
 
   public boolean check(String value) {
+    if (value == null) {
+      return false;
+    }
     int length = value.length();
     int n = length % 2 == 0 ? length / 2 : (length-1)/2;
     for (int i = 0; i < n; i++) {

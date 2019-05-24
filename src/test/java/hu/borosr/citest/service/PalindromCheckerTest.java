@@ -27,5 +27,6 @@ public class PalindromCheckerTest {
   @Test()
   public void testValidOtherData() {
     boolean response = palindromChecker.check(null);
+    Assert.assertFalse(response);
   }
 }
